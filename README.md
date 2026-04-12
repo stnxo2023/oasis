@@ -245,6 +245,13 @@ To help you estimate costs before running a simulation, here is a measured refer
 > \[!NOTE\]
 > Token usage scales with the number of agents, activation probability, and time steps. Use this reference as a baseline to estimate the cost of larger simulations.
 
+Estimated cost for 1 time step, activation probability 0.1 (Qwen pricing as of 2024-12-14):
+
+| Model     | 100 Agents | 1,000 Agents | 10,000 Agents |
+| --------- | ---------- | ------------ | ------------- |
+| qwen-plus | ¥0.026848  | ¥0.26848     | ¥2.6848       |
+| qwen-max  | ¥0.717     | ¥7.717       | ¥77.17        |
+
 ### More Tutorials
 
 To discover how to create profiles for large-scale users, as well as how to visualize and analyze social simulation data once your experiment concludes, please refer to [More Tutorials](examples/experiment/user_generation_visualization.md) for detailed guidance.
