@@ -229,6 +229,29 @@ if __name__ == "__main__":
 > \[!TIP\]
 > For more detailed instructions and additional configuration options, check out the [documentation](https://docs.oasis.camel-ai.org/).
 
+### 💰 Token Consumption Reference
+
+To help you estimate costs before running a simulation, here is a measured reference for token consumption:
+
+| Parameter              | Value      |
+| ---------------------- | ---------- |
+| Number of Agents       | 100        |
+| Activation Probability | 1          |
+| Time Steps             | 1          |
+| Input Tokens           | 335,600    |
+| Output Tokens          | 16,750     |
+| Model                  | QWEN_TURBO |
+
+> \[!NOTE\]
+> Token usage scales with the number of agents, activation probability, and time steps. Use this reference as a baseline to estimate the cost of larger simulations.
+
+Estimated cost for 1 time step, activation probability 0.1 (Qwen pricing as of 2024-12-14):
+
+| Model     | 100 Agents | 1,000 Agents | 10,000 Agents |
+| --------- | ---------- | ------------ | ------------- |
+| qwen-plus | ¥0.026848  | ¥0.26848     | ¥2.6848       |
+| qwen-max  | ¥0.717     | ¥7.717       | ¥77.17        |
+
 ### More Tutorials
 
 To discover how to create profiles for large-scale users, as well as how to visualize and analyze social simulation data once your experiment concludes, please refer to [More Tutorials](examples/experiment/user_generation_visualization.md) for detailed guidance.
