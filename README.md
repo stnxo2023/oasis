@@ -233,14 +233,14 @@ if __name__ == "__main__":
 
 To help you estimate costs before running a simulation, here is a measured reference for token consumption:
 
-| Parameter | Value |
-|---|---|
-| Number of Agents | 100 |
-| Activation Probability | 1 |
-| Time Steps | 1 |
-| Input Tokens | 335,600 |
-| Output Tokens | 16,750 |
-| Model | QWEN_TURBO |
+| Parameter              | Value      |
+| ---------------------- | ---------- |
+| Number of Agents       | 100        |
+| Activation Probability | 1          |
+| Time Steps             | 1          |
+| Input Tokens           | 335,600    |
+| Output Tokens          | 16,750     |
+| Model                  | QWEN_TURBO |
 
 > \[!NOTE\]
 > Token usage scales with the number of agents, activation probability, and time steps. Use this reference as a baseline to estimate the cost of larger simulations.
